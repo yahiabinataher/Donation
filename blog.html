@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=h, initial-scale=1.0" />
+    <title>Donation</title>
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="relative">
+    <!-- navbar -->
+    <nav
+      class="bg-[#F9F7F3] pt-2 pb-8 px-4 sm:px-0 sticky top-0 left-0 border-2 z-10"
+    >
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+          <a
+            class="py-2 px-8 rounded-md text-black bg-[#B4F461] font-medium"
+            href="/index.html"
+            >Donate</a
+          >
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="./assets/logo.png" alt="" />
+            <h4>Donate Bangladesh</h4>
+          </div>
+          <div class="flex items-center gap-1">
+            <img src="./assets/coin.png" alt="" />
+            <p><span id="balance">5000</span> BDT</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main id="donate_history" class="px-4 sm:px-0 my-4">
+      <section>
+        <div class="container w-full sm:w-3/5 mx-auto">
+          <div class="border faq border-slate-300 p-4 rounded-md mb-4">
+            <div class="faq_item">
+              <div
+                class="faq_title flex items-center justify-between cursor-pointer bg-[#B4F461] p-10 rounded-md"
+              >
+                <p class="text-lg font-medium">What do you mean by DOM?</p>
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+              <p class="hidden faq_content bg-[#c3f483] p-10">
+                The Document Object Model (DOM) is a programming interface for
+                web documents. It represents the page so that programs can
+                change the document structure, style, and content
+              </p>
+            </div>
+          </div>
+          <div class="border faq border-slate-300 p-4 rounded-md mb-4">
+            <div class="faq_item">
+              <div
+                class="faq_title flex items-center justify-between cursor-pointer bg-[#B4F461] p-10 rounded-md"
+              >
+                <p class="text-lg font-medium">How to get HTML Element</p>
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+              <p class="hidden faq_content bg-[#c3f483] p-10">
+                Finding HTML Elements <br />
+                Often, with JavaScript, you want to manipulate HTML elements.
+                <br />
+
+                To do so, you have to find the elements first. There are several
+                ways to do this: <br />
+
+                Finding HTML elements by id Finding HTML elements by tag name
+                Finding HTML elements by class name Finding HTML elements by CSS
+                selectors Finding HTML elements by HTML object collections
+              </p>
+            </div>
+          </div>
+          <div class="border faq border-slate-300 p-4 rounded-md mb-">
+            <div class="faq_item">
+              <div
+                class="faq_title flex items-center justify-between cursor-pointer bg-[#B4F461] p-10 rounded-md"
+              >
+                <p class="text-lg font-medium">Difference between node and element javascript</p>
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+              <p class="hidden faq_content bg-[#c3f483] p-10">
+                The main difference between Element and Node is that Element is a specific type of Node that represents an HTML or XML element. While all Elements are Nodes, not all Nodes are Elements. Another key difference is that Elements have additional properties and methods that are specific to elements.
+              </p>
+            </div>
+          </div>
+          <div class="border faq border-slate-300 p-4 rounded-md mb-">
+            <div class="faq_item">
+              <div
+                class="faq_title flex items-center justify-between cursor-pointer bg-[#B4F461] p-10 rounded-md"
+              >
+                <p class="text-lg font-medium">How html class toggle in javascript</p>
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+              <p class="hidden faq_content bg-[#c3f483] p-10">
+                Contains(), Add(), and Remove() methods can be used along with the classList attribute of the HTML element to toggle an Element Class in Javascript. To do so, we will first check with the help of Contains method whether the class that we want to toggle is present or not in the element
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#B4F461] py-8">
+      <p class="text-center font-medium text-md">Programing Hero Betch 10 ||</p>
+    </footer>
+    <script src="/js/blog.js"></script>
+  </body>
+</html>

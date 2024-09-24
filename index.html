@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=h, initial-scale=1.0" />
+    <title>Donation</title>
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-[Lexend] ">
+    <!-- navbar -->
+    <nav class="bg-[#F9F7F3] pt-2 pb-8 px-4 sm:px-0 sticky top-0 left-0 border-2 z-10 ">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+          <a class="py-2 px-8 rounded-md text-black bg-[#B4F461] font-medium" href="/blog.html"
+            >Blog</a
+          >
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="./assets/logo.png" alt="" />
+            <h4>Donate Bangladesh</h4>
+          </div>
+          <div class="flex items-center gap-1">
+            <img src="./assets/coin.png" alt="" />
+            <p><span id="bankAmount">15000</span> BDT</p>
+          </div>
+        </div>
+       
+      </div>
+    </nav>
+    <section class="mt-10 sticky top-[6%] sm:top-[7%] left-0 py-8  bg-white z-10">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-center gap-x-6">
+          <a
+            id="donate"
+            class="py-2 px-8 rounded-md font-medium text-black bg-[#B4F461]"
+            href="#"
+            >Donate</a
+          >
+          <a
+            id="history"
+            class="py-2 px-8 rounded-md text-black font-medium border border-slate-400 "
+            href="#"
+            >History</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <main id="donate_content" class="px-4 sm:px-0  ">
+      <!-- modal -->
+      <section id="modalOpen" class="modal hidden z-20">
+        <div class="container">
+            <div >
+                <div class="flex items-center gap-y-2 flex-col   rounded-md bg-[#c5fa80] w-96 p-10 mx-auto">
+                    <h4 class="text-2xl font-medium">Congrates!</h4>
+                    <img src="./assets/coin.png" alt="">
+                    <p class="font-sm">You Have Donated for Huamankind</p>
+                    <h4 class="text-2xl font-medium">Successful</h4>
+                   <button id="close"  class="py-2 px-4 rounded-md bg-[#ffd621] ">Close Conformation</button>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- donate card -->
+
+      <section>
+        <div class="container mx-auto">
+            <!-- fast card -->
+            <div class=" p-10 my-8 rounded-md shadow-xl border border-slate-400">
+              <div class="flex flex-col gap-4 md:flex-row items-center">
+                <div class="w-full md:w-1/2 ">
+                  <img  src="./assets/assonna.svg" alt="" />
+                </div>
+                <div class=" w-full md:w-1/2 flex flex-col gap-y-2 px-2">
+                  <div class="px-8 py-2 rounded-md bg-[#F3F3F3] flex gap-x-1 items-center w-48">
+                    <img src="./assets/coin.png" alt="" />
+                    <p><span>5000</span> BDT</p>
+                  </div>
+                 <div class="flex flex-col">
+                  <h4 class="text-xl sm:text-2xl font-bold">
+                    Donate for As-Sunnah Foundation Bangladesh
+                  </h4>
+                  <p>
+                    The As-Sunnah Foundation is a non-political, non-profit religious charity organization based in Bangladesh. It engages in various service activities, including education, religious outreach, and humanitarian efforts
+                  </p>
+  
+                  <input
+                    
+                  class="w-full donate_amount  outline-none h-12 text-slate-500 rounded-md border-2 border-slate-300 focus:shadow-md pl-4 mt-4"
+                    type="text"
+                    placeholder="Write Donation Amount"
+                  />
+                  <button   
+                  class="py-2 donateBtn px-8  text-black font-medium rounded-md bg-[#B4F461]  w-full mt-4 ">Donate Now</button>
+                 </div>
+                </div>
+              </div>
+            </div>
+            <!-- secend -->
+            <div class=" p-10 my-8 rounded-md shadow-xl border border-slate-400">
+              <div class="flex flex-col gap-4 md:flex-row items-center">
+                <div class="w-full md:w-1/2 ">
+                  <img src="./assets/noakhali.png" alt="" />
+                </div>
+                <div class=" w-full md:w-1/2 flex flex-col gap-y-2 px-2">
+                  <div class="px-8 py-2 rounded-md bg-[#F3F3F3] flex gap-x-1 items-center w-48">
+                    <img src="./assets/coin.png" alt="" />
+                    <p><span>10000</span> BDT</p>
+                  </div>
+                 <div class="flex flex-col">
+                  <h4 class="text-xl sm:text-2xl font-bold">
+                    Donate for Flood at Noakhali, Bangladesh
+                  </h4>
+                  <p>
+                    The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                  </p>
+  
+                  <input
+                  class="w-full  outline-none h-12 text-slate-500 rounded-md border-2 border-slate-300 focus:shadow-md pl-4 mt-4"
+                    type="text"
+                    placeholder="Write Donation Amount"
+                  />
+                  <button 
+                  class="py-2 donateBtn px-8  text-black font-medium rounded-md bg-[#B4F461]  w-full mt-4 ">Donate Now</button>
+                 </div>
+                </div>
+              </div>
+            </div>
+          <!-- therd card -->
+          <div class=" p-10 my-8 rounded-md shadow-xl border border-slate-400">
+            <div class="flex flex-col gap-4 md:flex-row items-center">
+              <div class="w-full md:w-1/2 ">
+                <img src="./assets/feni.png" alt="" />
+              </div>
+              <div class=" w-full md:w-1/2 flex flex-col gap-y-2 px-2">
+                <div class="px-8 py-2 rounded-md bg-[#F3F3F3] flex gap-x-1 items-center w-48">
+                  <img src="./assets/coin.png" alt="" />
+                  <p><span>6000</span> BDT</p>
+                </div>
+               <div class="flex flex-col">
+                <h4 class="text-xl sm:text-2xl font-bold">
+                  Donate for Flood Relief in Feni,Bangladesh
+                </h4>
+                <p>
+                  The recent floods in Fani have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                </p>
+
+                <input
+                class="w-full  outline-none h-12 text-slate-500 rounded-md border-2 border-slate-300 focus:shadow-md pl-4 mt-4"
+                  type="text"
+                  placeholder="Write Donation Amount"
+                />
+                <button 
+                class="py-2 donateBtn px-8  text-black font-medium rounded-md bg-[#B4F461]  w-full mt-4 ">Donate Now</button>
+               </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- four card -->
+          <div class=" p-10 my-8 rounded-md shadow-xl border border-slate-400">
+            <div class="flex flex-col gap-4 md:flex-row items-center">
+              <div class="w-full md:w-1/2 ">
+                <img src="./assets/quota-protest.png" alt="" />
+              </div>
+              <div class=" w-full md:w-1/2 flex flex-col gap-y-2 px-2">
+                <div class="px-8 py-2 rounded-md bg-[#F3F3F3] flex gap-x-1 items-center w-48">
+                  <img src="./assets/coin.png" alt="" />
+                  <p><span>7000</span> BDT</p>
+                </div>
+               <div class="flex flex-col">
+                <h4 class="text-xl sm:text-2xl font-bold">
+                  Aid for Injured in the Quota Movement
+                </h4>
+                <p>
+                  The 2024 Bangladesh quota reform movement, also known as the July Revolution, was a series of anti-government and pro-democracy protests in Bangladesh, spearheaded primarily by university students
+                </p>
+
+                <input
+                class="w-full  outline-none h-12 text-slate-500 rounded-md border-2 border-slate-300 focus:shadow-md pl-4 mt-4"
+                  type="text"
+                  placeholder="Write Donation Amount"
+                />
+                <button 
+                class="py-2 donateBtn px-8  text-black font-medium rounded-md bg-[#B4F461]  w-full mt-4 ">Donate Now</button>
+               </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </section>
+    </main>
+    <main id="donate_history" class="px-4 sm:px-0 my-4 hidden ">
+      <section >
+        <div class="container mx-auto ">
+            <!-- fast card -->
+          <div id="history_amount">
+           
+          </div>
+          
+          
+
+        </div>
+      </section>
+    </main>
+   
+    <footer class="bg-[#B4F461] py-8">
+        <p class="text-center font-medium text-md">Programing Hero Betch 10 ||</p>
+    </footer>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

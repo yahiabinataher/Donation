@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    position: relative;
+}
+
+.modal{
+    position: sticky;
+    top: 35vh;
+    right: 0;
+    height: 0;
+}
